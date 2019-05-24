@@ -3,6 +3,7 @@
 # Technical test for backends (.NET)
 
 ## Getting Started
+
 This project is an exercise / demonstration for the company Schibsted / Adevinta.
 
 This solution consists of two projects maded in C #, one is the project itself and the other is the test project of the first.
@@ -12,6 +13,7 @@ In this exercise, it consists of a web application that shows the use and manage
 During the creation of this solution neither styles nor special layouts have been used since it was part of the established requirements.
 
 ## Prerequisites
+
 Once downloaded this solution must be opened with Visual Studio 2017 or higher and have the Framework 4.6.1 installed.
 
 The libraries used are:
@@ -42,6 +44,7 @@ In the next section we explain how to do it in an automatic way.
 For the correct installation of the solution we advise, once the project is open, go to Tools-> NuGet Package Administrator-> Manage nuGet packages for the solution and then we execute the update of nonexistent libraries.
 
 ## Goals of this application
+
 - Use of singleton classes
 - Dependency injection
 - SOLID principles
@@ -60,23 +63,20 @@ For the correct installation of the solution we advise, once the project is open
 Explain how to run the automated tests for this system
 
 ## Explain what these tests test and why
+
 Give an example
 
 ## And coding style tests
 
-## Deployment
+## Built/Deployment With
 
-Add additional notes about how to deploy this on a live system
-
-## Built With
-•Visual Studio 2017 and c# - The programing framework used
-•,NET Framework 4.6.1 - Target Platform
-•IIS Express - Web server
+•Microsoft Visual Studio Community 2017 and c# - The programing framework used
+• ,NET Framework 4.6.1 - Target Platform
+• IIS Express - Web server
 
 ## Authors
-• Pep Vivó
 
-See also the list of contributors who participated in this project.
+• Pep Vivó (pep.vivo@schibsted.com)
 
 ## License
 
