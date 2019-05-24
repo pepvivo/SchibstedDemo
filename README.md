@@ -1,10 +1,7 @@
 
 # Technical test for backends (.NET)
 
-One Paragraph of project description goes here
-
 ## Getting Started
-
 This project is an exercise / demonstration for the company Schibsted / Adevinta.
 
 This solution consists of two projects maded in C #, one is the project itself and the other is the test project of the first.
@@ -43,8 +40,8 @@ These should be created in the **packages** folder in the solution directory.
 
 For the correct installation of the solution we advise, once the project is open, go to Tools-> NuGet Package Administrator-> Manage nuGet packages for the solution and then we execute the update of nonexistent libraries.
 
+## Goals of this application
 
-End with an example of getting some data out of the system or using it for a little demo
 
 ## Running the tests
 
