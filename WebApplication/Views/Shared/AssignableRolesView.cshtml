@@ -1,0 +1,31 @@
+﻿@using WebApplication.Models;
+@model WebApplication.Models.UserViewModel
+
+
+@{
+    Layout = null;
+}
+
+<div>
+    <hr />
+    <fieldset>
+        <legend>Assignable Roles</legend>
+        <div class="form-group">
+            @{
+                foreach (Role role in Enum.GetValues(typeof(Role)))
+                {
+                    var i = ((int)role);
+                    var currentRoleName = role.ToString();
+                    var htmlAttributes = ViewData["Mode"].Equals("Details")
+                        ? (object)new { @class = "form-control", @disabled = "disabled" }
+                        : (object)new { @class = "form-control" };
+
+                    @Html.CheckBoxFor(model => model.AssignableRoles[i], htmlAttributes)
+                    @Html.Label(currentRoleName, new { @class = "control-label col-md-2" })
+                    @Html.Label(" --- ", htmlAttributes: new { @class = "control-label col-md-2" })
+                }
+            }
+        </div>
+    </fieldset>
+</div>
+

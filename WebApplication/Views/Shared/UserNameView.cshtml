@@ -1,0 +1,17 @@
+﻿@model WebApplication.Models.UserViewModel
+
+<div class="form-group">
+    @Html.LabelFor(model => model.UserName, htmlAttributes: new { @class = "control-label col-md-2" })
+    <div class="col-md-10">
+        @{
+            var htmlAttributes = ViewData["Mode"] != null && ViewData["Mode"].Equals("Edit")
+                ? (object)new { @class = "form-control disabled", @readonly = "readonly" , @style = "background:#cccccc;" }
+                : (object)new { @class = "form-control" };
+
+        }
+        @Html.TextBoxFor(model => model.UserName, htmlAttributes: htmlAttributes)
+        @Html.ValidationMessageFor(model => model.UserName, "", new { @class = "text-danger" })
+
+    </div>
+</div>
+

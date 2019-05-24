@@ -1,0 +1,43 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Schibsted Demo</title>
+</head>
+<body>
+    <fieldset>
+        <legend>Schibsted Demo</legend>
+        <table style="width:100%;">
+            <tr>
+                <td style="vertical-align: top; width: 15%;">
+                    <p><br /></p>
+                    <div>
+                        <ul>
+                            <li>@Html.ActionLink("Page1", "Index", "Page1", routeValues: null, htmlAttributes: new { target = "iframe_body" })</li>
+                            <li>@Html.ActionLink("Page2", "Index", "Page2", routeValues: null, htmlAttributes: new { target = "iframe_body" })</li>
+                            <li>@Html.ActionLink("Page3", "Index", "Page3", routeValues: null, htmlAttributes: new { target = "iframe_body" })</li>
+                        </ul>
+                        <ul>
+                            <li>@Html.ActionLink("Users", "List", "UserPage", routeValues: null, htmlAttributes: new { target = "iframe_body" })</li>
+                        </ul>
+                        <ul>
+                            <li>@Html.ActionLink("Login", "Login", "Login", routeValues: null, htmlAttributes: new { target = "iframe_body" })</li>
+                            <li>@Html.ActionLink("Logout", "CloseSession", "Session", routeValues: null, htmlAttributes: new { target = "iframe_body" })</li>
+                        </ul>
+                    </div>
+                </td>
+                <td>
+                    <iframe src="/welcome.html" name="iframe_body" style="border:2px solid black;height:30em;width:100%; vertical-align: top;" />
+                </td> 
+            </tr>
+        </table>
+    </fieldset>
+</body>
+</html>
+

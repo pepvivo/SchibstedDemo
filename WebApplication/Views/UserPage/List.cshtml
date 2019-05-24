@@ -1,0 +1,57 @@
+﻿@using WebApplication.Models;
+@model IEnumerable<WebApplication.Models.User>
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>List of users</title>
+
+</head>
+<body>
+    <table style="width:100%;">
+        <tr>
+            <td style="vertical-align: top; width: 50%;">
+                <p><br /></p>
+                <div>
+                    <p>
+                        @Html.ActionLink("Create New", "Create", "UserPage", routeValues: new UserViewModel(), htmlAttributes: new { target = "iframe_user" })
+                    </p>
+                    <table style="width:100%; border:2px solid gray;">
+                        <tr>
+                            <th align="left" colspan="3">
+                                @Html.DisplayName("Users")
+                            </th>
+                            <th></th>
+                        </tr>
+
+                        @foreach (var item in Model)
+                        {
+                        <tr>
+                            <td width="60%">
+                                @Html.ActionLink(item.UserName, "Details", "UserPage", routeValues: new { name = item.UserName }, htmlAttributes: new { target = "iframe_user" })
+                            </td>
+                            <td>
+                                @Html.ActionLink("Edit", "Edit", routeValues: new { name = item.UserName }, htmlAttributes: new { target = "iframe_user" })
+                            </td>
+                            <td>
+                                @Html.ActionLink("Delete", "Delete", routeValues: new { name = item.UserName }, htmlAttributes: new { target = "iframe_user" })
+                            </td>
+                        </tr>
+                        }
+
+                    </table>
+                </div>
+            </td>
+            <td>
+                <iframe src="/UserPage/details" name="iframe_user" style="border:2px solid black;height:25em;width:100%; vertical-align: middle;" />
+            </td>
+        </tr>
+    </table>
+</body>
+</html>

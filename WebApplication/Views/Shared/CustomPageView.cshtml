@@ -1,0 +1,22 @@
+﻿@using WebApplication.Managers;
+
+@{
+    Layout = null;
+}
+
+<div>
+    <h3> @ViewData["Title"] </h3>
+
+    <div>
+        <p>
+            Hi  Mr/s : @SessionManager.Instance.CurrentUser.UserName
+        </p>
+    </div>
+    <div>
+        <p>
+            @Html.ActionLink("Close Session", "CloseSession", "Session")
+        </p>
+    </div>
+
+</div>
+

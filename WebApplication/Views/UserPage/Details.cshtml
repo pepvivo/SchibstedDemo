@@ -1,0 +1,35 @@
+﻿@using WebApplication.Models;
+@model WebApplication.Models.UserViewModel
+
+@{
+    Layout = null;
+    ViewData["Mode"] = "Details";
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Details</title>
+</head>
+<body>
+    <div>
+        <h4>User Detail Form</h4>
+        <hr />
+        <dl class="dl-horizontal">
+            <dt>
+                @Html.DisplayNameFor(model => model.UserName)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.UserName)
+            </dd>
+
+        </dl>
+    </div>
+
+    @Html.Partial("AssignableRolesView", ViewData)
+
+</body>
+</html>
