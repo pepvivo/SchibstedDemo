@@ -70,7 +70,7 @@ All of this had been used for Mocking/Changing its behavior setting up a new fun
 
 ## Built/Deployment With
 
-•Microsoft Visual Studio Community 2017 and c# - The programing framework used
+• Microsoft Visual Studio Community 2017 and c# - The programing framework used
 • ,NET Framework 4.6.1 - Target Platform
 • IIS Express - Web server
 
