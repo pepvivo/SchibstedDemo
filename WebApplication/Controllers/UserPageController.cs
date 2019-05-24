@@ -103,7 +103,7 @@ namespace WebApplication.Controllers
                 Resources.AppMessages.user_created_ok  : 
                 $"{Resources.AppMessages.user_not_created} {response.ReasonPhrase} - {responseMessage}";
 
-            return View("Create", "Message");
+            return View("Message");
         }
 
         [HttpPost]
@@ -126,7 +126,7 @@ namespace WebApplication.Controllers
                 Resources.AppMessages.user_updated_ok : 
                 $"{Resources.AppMessages.user_not_updated} {response.ReasonPhrase} - {responseMessage}";
 
-            return View("Update", "Message");
+            return View( "Message");
         }
 
         [HttpGet]
@@ -176,7 +176,7 @@ namespace WebApplication.Controllers
                 Resources.AppMessages.user_deleted_ok : 
                 $"{Resources.AppMessages.user_not_deleted} {response.ReasonPhrase} - {responseMessage}";
 
-            return View("Delete", "Message");
+            return View("Message");
         }
     }
 }

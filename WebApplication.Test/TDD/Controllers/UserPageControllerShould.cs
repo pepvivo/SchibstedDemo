@@ -137,7 +137,7 @@ namespace WebApplication.Test.TDD.Controllers
         }
 
         [Test]
-        public async Task Created_Should_return_a_Create_view_with_a_correct_message()
+        public async Task Created_Should_return_a_correct_message()
         {
             _mockHttpRequestBase.Setup(h => h.Url).Returns(URL);
 
@@ -151,7 +151,6 @@ namespace WebApplication.Test.TDD.Controllers
 
             Assert.IsNotNull(result);
             Assert.IsTrue(result is ViewResult);
-            Assert.AreEqual((result as ViewResult).ViewName, "Create");
 
             Assert.IsTrue((result as ViewResult).ViewData.Keys.Contains("Message"));
             Assert.AreEqual((result as ViewResult).ViewData["Message"], expectedResult);
@@ -160,7 +159,7 @@ namespace WebApplication.Test.TDD.Controllers
         }
 
         [Test]
-        public async Task Update_Should_return_a_Update_view_with_a_correct_message()
+        public async Task Update_Should_return_a_correct_message()
         {
             _mockHttpRequestBase.Setup(h => h.Url).Returns(URL);
 
@@ -174,7 +173,6 @@ namespace WebApplication.Test.TDD.Controllers
 
             Assert.IsNotNull(result);
             Assert.IsTrue(result is ViewResult);
-            Assert.AreEqual((result as ViewResult).ViewName, "Update");
 
             Assert.IsTrue((result as ViewResult).ViewData.Keys.Contains("Message"));
             Assert.AreEqual((result as ViewResult).ViewData["Message"], expectedResult);
@@ -233,7 +231,7 @@ namespace WebApplication.Test.TDD.Controllers
         }
 
         [Test]
-        public async Task Delete_Should_return_a_Delete_view_with_a_correct_message()
+        public async Task Delete_Should_return_a_correct_message()
         {
             _mockHttpRequestBase.Setup(h => h.Url).Returns(URL);
 
@@ -247,7 +245,6 @@ namespace WebApplication.Test.TDD.Controllers
 
             Assert.IsNotNull(result);
             Assert.IsTrue(result is ViewResult);
-            Assert.AreEqual((result as ViewResult).ViewName, "Delete");
 
             Assert.IsTrue((result as ViewResult).ViewData.Keys.Contains("Message"));
             Assert.AreEqual((result as ViewResult).ViewData["Message"], expectedResult);
