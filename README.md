@@ -60,7 +60,13 @@ For the correct installation of the solution we advise, once the project is open
 
 ## Running the tests
 
-Explain how to run the automated tests for this system
+All controllers of application and several classes are tested. 
+Three metodologies in Unit Testing had been used (for demostration):
+- Mock Libraries 
+- Dependency inyection
+- Inheritance for overriding methods and properties.
+
+All of this had been used for Mocking/Changing its behavior setting up a new function/process alternative
 
 ## Explain what these tests test and why
 
@@ -81,4 +87,3 @@ Give an example
 ## License
 
 This project hasn't license.
-
