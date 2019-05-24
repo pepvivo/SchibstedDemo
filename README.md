@@ -68,12 +68,6 @@ Three metodologies in Unit Testing had been used (for demostration):
 
 All of this had been used for Mocking/Changing its behavior setting up a new function/process alternative
 
-## Explain what these tests test and why
-
-Give an example
-
-## And coding style tests
-
 ## Built/Deployment With
 
 •Microsoft Visual Studio Community 2017 and c# - The programing framework used
