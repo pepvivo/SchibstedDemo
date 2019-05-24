@@ -18,22 +18,27 @@ Once downloaded this solution must be opened with Visual Studio 2017 or higher a
 
 The libraries used are:
 
-  - package id="Castle.Core" version="4.3.1" targetFramework="net461" 
-  - package id="log4net" version="2.0.8" targetFramework="net461" 
-  - package id="Microsoft.AspNet.Mvc" version="5.2.7" targetFramework="net461" 
-  - package id="Microsoft.AspNet.Mvc.es" version="5.2.7" targetFramework="net461" 
-  - package id="Microsoft.AspNet.Razor" version="3.2.7" targetFramework="net461" 
-  - package id="Microsoft.AspNet.Razor.es" version="3.2.7" targetFramework="net461"
-  - package id="Microsoft.AspNet.WebApi.Client" version="5.2.7" targetFramework="net461" 
-  - package id="Microsoft.AspNet.WebApi.Core" version="5.2.7" targetFramework="net461" 
-  - package id="Microsoft.AspNet.WebApi.WebHost" version="5.2.7" targetFramework="net461" 
-  - package id="Microsoft.AspNet.WebPages" version="3.2.7" targetFramework="net461" 
-  - package id="Microsoft.AspNet.WebPages.es" version="3.2.7" targetFramework="net461" 
-  - package id="Microsoft.CodeDom.Providers.DotNetCompilerPlatform" version="2.0.0" targetFramework="net461" 
-  - package id="Microsoft.Web.Infrastructure" version="1.0.0.0" targetFramework="net461" 
-  - package id="Newtonsoft.Json" version="12.0.2" targetFramework="net461" 
-  - package id="System.Runtime.CompilerServices.Unsafe" version="4.5.2" targetFramework="net461" 
-  - package id="System.Threading.Tasks.Extensions" version="4.5.2" targetFramework="net461" 
+  -  package id="Castle.Core" version="4.3.1" targetFramework="net461" 
+  -  package id="jQuery" version="1.6.2" targetFramework="net461" 
+  -  package id="jQuery.UI.Combined" version="1.9.2" targetFramework="net461" 
+  -  package id="knockoutjs" version="2.2.0" targetFramework="net461" 
+  -  package id="log4net" version="2.0.8" targetFramework="net461" 
+  -  package id="Microsoft.AspNet.Mvc" version="5.2.7" targetFramework="net461" 
+  -  package id="Microsoft.AspNet.Mvc.es" version="5.2.7" targetFramework="net461" 
+  -  package id="Microsoft.AspNet.Razor" version="3.2.7" targetFramework="net461" 
+  -  package id="Microsoft.AspNet.Razor.es" version="3.2.7" targetFramework="net461" 
+  -  package id="Microsoft.AspNet.WebApi.Client" version="5.2.7" targetFramework="net461" 
+  -  package id="Microsoft.AspNet.WebApi.Core" version="5.2.7" targetFramework="net461" 
+  -  package id="Microsoft.AspNet.WebApi.HelpPage" version="5.2.7" targetFramework="net461" 
+  -  package id="Microsoft.AspNet.WebApi.WebHost" version="5.2.7" targetFramework="net461" 
+  -  package id="Microsoft.AspNet.WebPages" version="3.2.7" targetFramework="net461" 
+  -  package id="Microsoft.AspNet.WebPages.es" version="3.2.7" targetFramework="net461" 
+  -  package id="Microsoft.CodeDom.Providers.DotNetCompilerPlatform" version="2.0.0" targetFramework="net461" 
+  -  package id="Microsoft.Web.Infrastructure" version="1.0.0.0" targetFramework="net461" 
+  -  package id="Newtonsoft.Json" version="12.0.2" targetFramework="net461" 
+  -  package id="System.Runtime.CompilerServices.Unsafe" version="4.5.2" targetFramework="net461" 
+  -  package id="System.Threading.Tasks.Extensions" version="4.5.2" targetFramework="net461" 
+  -  package id="WebApiTestClient" version="1.1.1" targetFramework="net461" 
 
 
 These should be created in the **packages** folder in the solution directory.
@@ -70,15 +75,18 @@ All of this had been used for Mocking/Changing its behavior setting up a new fun
 
 There are two forders with several tests of TDD/BDD filosofies.
 
+These test must be run in Unit Test Explorer of Visual Studio.
+
 ## Built/Deployment With
 
 - Microsoft Visual Studio Community 2017 and c# - The programing framework used
-- ,NET Framework 4.6.1 - Target Platform
+- .NET Framework 4.6.1 - Target Platform
 - IIS Express - Web server
 
 ## Authors
 
-• Pep Vivó (pep.vivo@schibsted.com)
+• Pep Vivó (pep.vivo@schibsted.com) 
+
 
 ## License
 
