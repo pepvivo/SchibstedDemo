@@ -44,14 +44,16 @@ For the correct installation of the solution we advise, once the project is open
 ## Goals of this application
 - Use of singleton classes
 - Dependency injection
+- SOLID principles
 - Use of interfaces (assures to be able to change the behavior of a class without modifying the written code)
-- Attributes of authorization of classes for the control of permissions through roles.This application has been done thinking about encapsulation and reuse of code.Any controller that has the attribute **AuthorizedRolesAttribute** will pass the user role control.
-- SessionBaseController is the base class of session control. Any class that inherits from **SessionBaseController** at the moment that there is no or the session has been lost will be directed to the Login page.
+- Attributes of authorization of classes for the control of permissions through roles.This application has been done thinking about encapsulation and reuse of code.Any new controller that has the attribute **AuthorizedRolesAttribute** will pass the user role control.
+- SessionBaseController is the base class of session control. Any new class that inherits from **SessionBaseController** at the moment that there is no or the session has been lost will be directed to the Login page.
 - Help page for web api controller (User). Additionally, the **WebApiTestClient** library has been included for direct testing of this api rest.
 - This application has been created so that simply including more roles in the list of roles the application will show and work with them without having to modify anything else (Dynamic execution).
 - Use of string resources (application ready for change the language easierly.
 - Internally and like demostration mode, controllers calls are made either directly or by Http requests.
 - Log4net library for log control.
+- In this solution a project of Unit Test is included. Several test are included organized in two folders that show the type of Tests (TDD / BDD).
 
 ## Running the tests
 
