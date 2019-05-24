@@ -1,4 +1,5 @@
 
+# SchibstedDemo Solution
 # Technical test for backends (.NET)
 
 ## Getting Started
@@ -34,14 +35,23 @@ The libraries used are:
 
 
 These should be created in the **packages** folder in the solution directory.
-
+In the next section we explain how to do it in an automatic way.
 
 ## Installing
 
 For the correct installation of the solution we advise, once the project is open, go to Tools-> NuGet Package Administrator-> Manage nuGet packages for the solution and then we execute the update of nonexistent libraries.
 
 ## Goals of this application
-
+- Use of singleton classes
+- Dependency injection
+- Use of interfaces (assures to be able to change the behavior of a class without modifying the written code)
+- Attributes of authorization of classes for the control of permissions through roles.This application has been done thinking about encapsulation and reuse of code.Any controller that has the attribute **AuthorizedRolesAttribute** will pass the user role control.
+- SessionBaseController is the base class of session control. Any class that inherits from **SessionBaseController** at the moment that there is no or the session has been lost will be directed to the Login page.
+- Help page for web api controller (User). Additionally, the **WebApiTestClient** library has been included for direct testing of this api rest.
+- This application has been created so that simply including more roles in the list of roles the application will show and work with them without having to modify anything else (Dynamic execution).
+- Use of string resources (application ready for change the language easierly.
+- Internally and like demostration mode, controllers calls are made either directly or by Http requests.
+- Log4net library for log control.
 
 ## Running the tests
 
