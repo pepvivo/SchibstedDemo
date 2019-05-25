@@ -164,21 +164,21 @@ namespace WebApplication.Controllers
         /// <summary>
         /// Delete an user
         /// </summary>
-        /// <param name="value">Name identificator of user</param>
+        /// <param name="id">Name identificator of user</param>
         /// <returns>IHttpActionResult especifiquing the result of operation</returns>
         [Route("{id}")]
         [HttpDelete]
-        public virtual IHttpActionResult Delete(string value)
+        public virtual IHttpActionResult Delete(string id)
         {
             if (!_autheniication.IsAuthentificated(User))
                 return Unauthorized();
 
             try
             {
-                if (_userManager.IsLastAdminUser(value))
+                if (_userManager.IsLastAdminUser(id))
                     return BadRequest("Last admin user cannot be deleted.");
 
-                return (_userManager.Delete(value)) ?
+                return (_userManager.Delete(id)) ?
                     (IHttpActionResult)Ok() :
                     (IHttpActionResult)NotFound();
             }

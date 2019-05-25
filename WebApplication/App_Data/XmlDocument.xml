@@ -606,7 +606,7 @@
             <summary>
             Delete an user
             </summary>
-            <param name="value">Name identificator of user</param>
+            <param name="id">Name identificator of user</param>
             <returns>IHttpActionResult especifiquing the result of operation</returns>
         </member>
         <member name="T:WebApplication.Managers.BasicAuthHttpModule">
